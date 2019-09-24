@@ -5,7 +5,7 @@ dpdata only works with python 3.x.
 # Installation
 One can download the source code of dpdata by 
 ```bash
-git clone https://github.com/deepmodeling/dpdata.git dpdata
+git clone https://github.com/LiuGroupHNU/dpdata.git dpdata
 ```
 then use `setup.py` to install the module
 ```bash
@@ -47,7 +47,17 @@ If the multiple frames stored in, for example, a `OUTCAR` is wanted,
 ```python
 d_outcar = dpdata.LabeledSystem('OUTCAR')
 ```
+SIESTA SCF calculation output file: scf_output    (only a frame)
+```python
+ret_scf  = dpdata.LabeledSystem(scf_output, fmt='siesta/output')
+```
+SIESTA aiMD calculation output file: aimd_output  (contain a lot of frames)
+```python
+ret_aimd = dpdata.LabeledSystem(aimd_output, fmt='siesta/aiMD_output')
+```
 The labels provided in the `OUTCAR`, i.e. energies, forces and virials (if any), are loaded by `LabeledSystem`. It is noted that the forces of atoms are always assumed to exist. `LabeledSystem` is a derived class of `System`.
+
+Provide siesta technical support for dpdata
 
 The `System` or `LabeledSystem` can be constructed from the following file formats with the `format key` in the table passed to argument `fmt`:
 

@@ -60,8 +60,8 @@ The `System` or `LabeledSystem` can be constructed from the following file forma
 | lammps  | dump   | True         | False   | System        | 'lammps/dump' |
 | deepmd  | raw    | True         | True    | LabeledSystem | 'deepmd/raw'  |
 | gaussian| log    | False        | True    | LabeledSystem | 'gaussian/log'|
-| siesta  | output | False        | True    | System | 'siesta/output'|
-| siesta  | aiMD_output| True        | True    | System | 'siesta/aiMD_output'|
+| siesta  | output | False        | True    | LabeledSystem | 'siesta/output'|
+| siesta  | aiMD_output| True        | True    | LabeledSystem | 'siesta/aiMD_output'|
 | cp2k    | output | False        | True    | LabeledSystem | 'cp2k/output'|
 
 

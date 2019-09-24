@@ -64,6 +64,8 @@ class System (MSONable) :
                 - ``lammps/dump``: Lammps dump
                 - ``vasp/poscar``: vasp POSCAR
                 - ``pwscf/traj``: pwscf trajectory files. should have: file_name+'.in' and file_name+'.pos'
+                - ``siesta/output``: SIESTA SCF calculation output file: scf_output    (only a frame)
+                - ``siesta/aiMD_output``: SIESTA aiMD calculation output file: aimd_output  (contain a lot of frames)
 
         type_map : list of str
             Needed by formats lammps/lmp and lammps/dump. Maps atom type to name. The atom with type `ii` is mapped to `type_map[ii]`.
@@ -524,6 +526,8 @@ class LabeledSystem (System):
                 - ``deepmd/npy``: deepmd-kit compressed format (numpy binary)
                 - ``pwscf/traj``: pwscf trajectory files. should have: file_name+'.in', file_name+'.pos', file_name+'.evp' and file_name+'.for'
                 - ``gaussian/log``: gaussian logs
+                - ``siesta/output``: SIESTA SCF calculation output file: scf_output    (only a frame)
+                - ``siesta/aiMD_output``: SIESTA aiMD calculation output file: aimd_output  (contain a lot of frames)
 
         type_map : list of str
             Needed by formats deepmd/raw and deepmd/npy. Maps atom type to name. The atom with type `ii` is mapped to `type_map[ii]`.

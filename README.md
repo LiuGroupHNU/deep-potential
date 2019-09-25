@@ -1,5 +1,9 @@
-**dpdata** is a python package for manipulating DeePMD-kit, VASP, LAMMPS data formats.
+**dpdata** is a python package for manipulating DeePMD-kit, VASP(Gaussian, PWSCF or SIESTA), LAMMPS data formats.
 dpdata only works with python 3.x.
+
+The source code link is as follows：
+deepmd-kit: https://github.com/deepmodeling/deepmd-kit
+dpdata：https://github.com/deepmodeling/dpdata
 
 
 # Installation

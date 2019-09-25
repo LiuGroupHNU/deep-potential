@@ -53,11 +53,11 @@ Provide siesta technical support for dpdata
 
 SIESTA SCF calculation output file: scf_output    (only a frame)
 ```python
-ret_scf  = dpdata.LabeledSystem(scf_output, fmt='siesta/output')
+ret_scf  = dpdata.LabeledSystem('scf_output', fmt='siesta/output')
 ```
 SIESTA aiMD calculation output file: aimd_output  (contain a lot of frames)
 ```python
-ret_aimd = dpdata.LabeledSystem(aimd_output, fmt='siesta/aiMD_output')
+ret_aimd = dpdata.LabeledSystem('aimd_output', fmt='siesta/aimd_output')
 ```
 
 The `System` or `LabeledSystem` can be constructed from the following file formats with the `format key` in the table passed to argument `fmt`:
@@ -72,7 +72,7 @@ The `System` or `LabeledSystem` can be constructed from the following file forma
 | deepmd  | raw    | True         | True    | LabeledSystem | 'deepmd/raw'  |
 | gaussian| log    | False        | True    | LabeledSystem | 'gaussian/log'|
 | siesta  | output | False        | True    | LabeledSystem | 'siesta/output'|
-| siesta  | aiMD_output| True        | True    | LabeledSystem | 'siesta/aiMD_output'|
+| siesta  | aimd_output| True        | True    | LabeledSystem | 'siesta/aimd_output'|
 | cp2k    | output | False        | True    | LabeledSystem | 'cp2k/output'|
 
 
